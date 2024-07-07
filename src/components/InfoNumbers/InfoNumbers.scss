@@ -1,0 +1,22 @@
+.data {
+  gap: 126px;
+  margin-bottom: 99px;
+  &_item {
+    flex-direction: column;
+    &-data {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 100%;
+      text-transform: uppercase;
+      color: #fff;
+      margin-bottom: 2px;
+    }
+    &-info {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 133%;
+      color: #fff;
+      opacity: 0.3;
+    }
+  }
+}

@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #1c1a1a;
+  background: url("/Bitcoin.svg") 94.5% 0% no-repeat,
+    url("/Litecoin.svg") 75% 45% no-repeat,
+    url("/Ethereum.svg") 94.5% 95% no-repeat, #1c1a1a;
+  background-size: auto, auto, auto, cover;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+.flex {
+  display: flex;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 48px 62px;
+  position: relative;
+}
+#root {
+  width: 100%;
+}
+@media screen and (max-width: 1300px) {
+  .users {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .hero_heading {
+    font-size: 60px;
+    line-height: 108%;
+  }
+  .hero_desc {
+    font-size: 32px;
+  }
+  .data_item-data {
+    font-size: 40px;
+  }
+  .hero_link {
+    width: 100%;
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .container {
+    padding: 20px 25px;
+  }
+  .hero_heading {
+    word-wrap: break-word;
+    text-align: center;
+    font-size: 50px;
+    line-height: 108%;
+    margin: 0 auto;
+    margin-bottom: 21px;
+    max-width: 90%;
+  }
+  .color_text {
+    display: inline;
+  }
+  .hero_desc {
+    margin: 0 auto 29px;
+    text-align: center;
+    font-size: 28px;
+    max-width: 70%;
+  }
+  .data {
+    gap: 17%;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .data_item-data {
+    font-size: 35px;
+    margin-bottom: 3px;
+  }
+  .data_item-info {
+    font-size: 14px;
+    line-height: 133%;
+  }
+  .hero_link {
+    width: 100%;
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  .about_links {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  body {
+    background: url(/Bitcoin.svg) 96.5% 0% no-repeat,
+      url(/Litecoin.svg) 5% 16% no-repeat,
+      url(/Ethereum.svg) 99.5% 57% no-repeat, #1c1a1a;
+    background-size: 50%, 46%, 50%, cover;
+  }
+  .container {
+    padding: 20px 15px;
+  }
+  .hero_heading {
+    word-wrap: break-word;
+    font-size: 40px;
+    line-height: 108%;
+  }
+  .color_text {
+    display: inline;
+    font-size: 40px;
+    line-height: 108%;
+  }
+  .hero_desc {
+    font-size: 20px;
+  }
+  .data {
+    margin-bottom: 29px;
+  }
+  .data_item-data {
+    font-size: 28px;
+  }
+  .hero_link {
+    font-size: 20px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .about_links {
+    gap: 16px;
+    .link {
+      padding: 2px 9px;
+
+      width: 100px;
+      height: 32px;
+      &-img {
+        width: 20px;
+      }
+      &-desc {
+        font-size: 10px;
+        line-height: 100%;
+        margin-bottom: -3px;
+      }
+      &-title {
+        font-size: 14px;
+        line-height: 100%;
+      }
+    }
+  }
+}

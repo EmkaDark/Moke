@@ -1,0 +1,27 @@
+.hero_link {
+  display: inline-block;
+  border-radius: 16px;
+  padding: 14px 0px;
+  width: 40.5%;
+  height: 56px;
+  margin-bottom: 76px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #1c1a1a;
+  text-decoration: none;
+  &:visited,
+  &:active {
+    text-decoration: none;
+    color: #1c1a1a;
+  }
+  box-shadow: 0 0 150px 0 rgba(165, 191, 180, 0.42);
+  background: linear-gradient(
+    135deg,
+    rgba(124, 111, 207, 0.97) 0%,
+    rgba(116, 174, 170, 0.95) 49.13%,
+    #6fcf97 100%
+  );
+}

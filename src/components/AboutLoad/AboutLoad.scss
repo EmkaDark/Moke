@@ -1,0 +1,30 @@
+.about_links {
+  gap: 20px;
+
+  .link {
+    border-radius: 12px;
+    padding: 8px 12px;
+    width: 132px;
+    height: 54px;
+    background-color: rgba(48, 45, 45, 0.34);
+    backdrop-filter: blur(28px);
+    gap: 7px;
+    &-img {
+      width: 25px;
+    }
+    &-desc {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 100%;
+      color: rgba(242, 242, 242, 0.4);
+      margin: 0;
+      margin-bottom: 3px;
+    }
+    &-title {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 120%;
+      color: rgba(242, 242, 242, 0.4);
+    }
+  }
+}

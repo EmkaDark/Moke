@@ -1,0 +1,59 @@
+.users {
+  position: absolute;
+  list-style: none;
+  flex-direction: column;
+  width: 400px;
+  row-gap: 23px;
+  padding: 0;
+  margin: 0;
+  top: 18.5%;
+  right: 5.7%;
+  .user-card {
+    border-radius: 20px;
+    padding: 16px 30px 16px 20px;
+    width: 288px;
+    min-height: 138px;
+    backdrop-filter: blur(30px);
+    background: rgba(48, 45, 45, 0.34);
+    &:nth-child(odd) {
+      align-self: end;
+    }
+    &:nth-child(3) {
+      position: relative;
+      right: -4px;
+    }
+  }
+  .user {
+    margin-bottom: 15px;
+
+    img {
+      border-radius: 50%;
+      margin-right: 18px;
+    }
+    &_data {
+      flex-direction: column;
+      justify-content: space-around;
+      &-name {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 133%;
+        text-transform: uppercase;
+        color: #f2f2f2;
+      }
+      &-link {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 125%;
+        margin: 0;
+        color: rgba(242, 242, 242, 0.4);
+      }
+    }
+  }
+  .user_comment {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 115%;
+    color: #f2f2f2;
+    margin: 0;
+  }
+}
